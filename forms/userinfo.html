@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UserInfo</title>
+    <style>
+        input {
+            display: block;
+        }
+    </style>
+    <script>
+			var height;
+			function rangeUpdated(e) {
+				height = e.target.value;
+				document.getElementById('height').innerText = height;
+
+			}
+    </script>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>User Information</legend>
+        <input type="text" name="firstname" placeholder="firstname" required>
+        <input type="text" name="lastname" placeholder="lastname" required>
+        <input type="email" name="email" placeholder="abc@xyz.com" required>
+        <input type="tel" name="mobile" placeholder="mobile">
+        <input type="date" name="dob" min="1900-01-01" max="2017-05-16">
+        <input type="number" min="20" max="200" name="weight" placeholder="weight">
+        <label>Height</label>
+        <input type="range"
+               min="20" max="200" name="height"
+               onchange="rangeUpdated(event)"
+               placeholder="height"><output id="height"></output>
+        <input list="games" placeholder="Favorite game">
+        <datalist id="games">
+            <option>Game1</option>
+            <option>Game2</option>
+            <option>Game</option>
+        </datalist>
+
+        <input type="submit">
+    </fieldset>
+</form>
+</body>
+</html>
+
+<!--
+First Name - text  required
+Last Name - text required
+Email - email
+Mobile - tel
+Date Of Birth - Date 2017-05-16 < 1900-01-01 min and max
+Weight - number 1000 pounds / 0 pounds min and max
+Height - number 1000 cms / 1 cm min and max
+
+Favorite Game - text
+
+-->

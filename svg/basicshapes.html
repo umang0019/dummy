@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG - Basic Shapes</title>
+    <style>
+        line{
+            stroke-width: 2;
+            stroke: purple;
+        }
+    </style>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" width="100%">
+
+
+    <line x1="10" y1="10" x2="25" y2="50"/>
+
+
+    <rect x="55" y="10" width="50" height="40" style="stroke: purple; stroke-width: 3; fill: orange;"/>
+
+    <rect x="115" y="10" width="50" height="40" rx="10" ry="10"
+          style="stroke: purple; stroke-width: 3; fill: orange;"/>
+
+    <circle cx="220" cy="30" r="20" style="stroke: purple; stroke-width: 3; fill: orange;"/>
+
+    <ellipse cx="300" cy="30" rx="20" ry="15" style="stroke: purple; stroke-width: 3; fill: orange;"/>
+
+    <svg x="350" y="10">
+        <polygon points="20,5 30,5  40,15  40,25 30,35  20,35  10,25  10,15 "
+                 style="stroke:purple; fill:orange; stroke-width: 3;"/>
+    </svg>
+
+</svg>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Form Examples</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend class="legend">Personal Information</legend>
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+        </div>
+        <br>
+        <div>
+            <label for="dob">Date of Birth</label><br>
+            <input type="datetime-local" id="dob" value="2017-06-16T10:02" min="2017-05-01T00:00" max="2017-06-25T13:00">
+        </div>
+        <div class="gender">
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender"><label>Male</label>
+            <input type="radio" name="gender"><label>Female</label>
+        </div>
+        <br>
+        <div>
+            <label for="address">Address</label><br>
+            <input type="text" class="textboxAddress" placeholder="Street Address" autofocus><br>
+            <input type="text" class="textboxAddress" placeholder="Address Line 2"><br>
+            <input type="text" class="textboxAddressDetail" placeholder="City" list="cities">
+            <input type="text" class="textboxAddressDetail" placeholder="State/Province" list="states"><br>
+
+            <datalist id="cities">
+                <option>Adamsville</option>
+                <option>Addison</option>
+                <option>Akron</option>
+                <option>Alabaster</option>
+                <option>Alexander City</option>
+                <option>Brantley</option>
+                <option>Brent</option>
+                <option>Brighton</option>
+            </datalist>
+            <datalist id="states">
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+            </datalist>
+
+            <input type="number" class="textboxAddressDetail" placeholder="Pincode">
+
+            <select class="selectOption">
+                <option value="Country">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="SouthAfria">South Africa</option>
+                <option value="Germany">Germany</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="contact">Phone Number</label><br>
+            <input type="tel" class="textboxAddressDetail" placeholder="Home">
+            <input type="tel" class="textboxAddressDetail" placeholder="Work">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email Address</label><br>
+            <input type="email" class="textboxAddressDetail" placeholder="email@example.com" autocomplete="on">
+        </div>
+        <input type="submit" value="Submit"/>
+    </fieldset>
+</form>
+</body>
+</html>

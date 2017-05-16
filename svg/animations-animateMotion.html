@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Animations - animateTransform</title>
+</head>
+<body>
+
+<svg width="100%">
+    <path d="M10,50 q60,50 100,0 q60,-50 100,0" style="stroke: black; stroke-width: 1px; fill: none;"/>
+    <rect x="0" y="0" width="30" height="15"
+          style="stroke: #ff0000; fill: none;">
+        <animateMotion
+                path="M10,50 q60,50 100,0 q60,-50 100,0"
+                begin="0s" dur="10s" repeatCount="indefinite"
+        />
+    </rect>
+</svg>
+
+<svg>
+    <path d="M10,50 q60,50 100,0 q60,-50 100,0" style="stroke: black; stroke-width: 1px; fill: none;"/>
+    <rect x="0" y="0" width="30" height="15"
+          style="stroke: #ff0000; fill: none;">
+        <animateMotion
+                path="M10,50 q60,50 100,0 q60,-50 100,0"
+                begin="0s" dur="10s" repeatCount="indefinite"
+                rotate="auto"
+        />
+    </rect>
+</svg>
+</body>
+</html>
